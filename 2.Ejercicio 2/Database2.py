@@ -11,23 +11,23 @@ Finalmente muestra el valor final del numero_magico por pantalla
 #obligue introducir dicho numero con esos parametros
 #Empecemos por el numero_usuario
 class numero_final:
-    def __init__(self, numero_usuario):
+    def __init__(self, numero_usuario = input("introduzca un numero entre el 1 y el 9:")):
         self.numero_usuario = numero_usuario
         while True:
-            numero_usuario = input("introduzca un numero entre el 1 y el 9:")
             try:
-                numero_usuario = int(numero_usuario)
+                self.numero_usuario = int(self.numero_usuario)
             except:
-                break
-            if 0 < numero_usuario < 10:
+                print("El numero no es valido")
+            if 0 < self.numero_usuario < 10:
                 break
             else:
                 pass
     def operacion(self):
         numero_magic = 12345679
         nuevo_num = self.numero_usuario*9
+        print("El numero usuario :{}, multiplicado por 9 es: {}".format(self.numero_usuario, nuevo_num))
         numero_magico = nuevo_num * numero_magic
-        return numero_magico
-print(numero_final.operacion(self=None))
+        return "Finalmente, el numero que resulta de multiplicar {} y {} es: {}".format(numero_magic,nuevo_num, numero_magico)
+print(numero_final.operacion(numero_final))
 
 
