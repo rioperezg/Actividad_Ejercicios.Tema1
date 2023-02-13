@@ -13,7 +13,8 @@ cadena = "zeréP nauJ,01"
 """
 #Creamos una clase para recibir dicha cadena corrupta y poder transformalo en una cadena legible.
 class nombre_y_apellidos:
-    #A continucaion creamos el constructor de la clase, que se va a componer unicamente de cadena, ya que es solo la cadena corrupta.
+    #A continucaion creamos el constructor de la clase, que se va a componer unicamente de cadena, ya que es solo la cadena corrupta
+    #lo que necesitamos
     def __init__(self, cadena):
         self.cadena = cadena 
     @staticmethod      
