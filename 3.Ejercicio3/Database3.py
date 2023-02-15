@@ -16,5 +16,10 @@ def lista_final(lista_1,lista_2):
         for j in lista_2:
             if i == j:
                 lista_final.append(i)
-    print("En primera instancia la lista final es: ",lista_final)            
-    for 
+    print("En primera instancia la lista final es: ",lista_final)
+    lista_final2 = []
+    for lista_final in lista_final:
+        if lista_final not in lista_final2:
+            lista_final2.append(lista_final)
+    return lista_final2      
+print(lista_final(lista_1,lista_2))
