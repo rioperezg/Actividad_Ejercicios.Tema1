@@ -11,8 +11,18 @@ Para ordenar automáticamente una lista es posible utilizar el método .sort(), 
 #Mi idea es predefinir un diccionario con el orden ya establecido. Y con el metodo sort ordenar todas las tareas de mayor a menor 
 #importancia de acuerdo al numero que estan asignados. no, tenemos que hacerlo de forma diferente
 Tareas_Domesticas = ["2Recoger los platos", "1Hacer la cama", "3Hacer la comida"]
-Tareas_Domesticas.sort
+Tareas_Domesticas.sort()
 print(Tareas_Domesticas)
-# def ordenar(Tareas):
-    # Tareas.sort()
+    
 
+def ordenar(Tareas):
+    Tareas_ordenadas = Tareas.sort()
+    for Tareas_ordenadas in Tareas_ordenadas:
+        if int in Tareas_ordenadas:
+            Tareas_ordenadas.remove(Tareas_ordenadas)
+    return Tareas_ordenadas
+print(ordenar(Tareas_Domesticas))            
+
+
+
+  
