@@ -17,9 +17,9 @@ print(Tareas_Domesticas)
 
 def ordenar(Tareas):
     Tareas_ordenadas = Tareas.sort()
-    for Tareas_ordenadas in Tareas_ordenadas:
-        if int in Tareas_ordenadas:
-            Tareas_ordenadas.remove(Tareas_ordenadas)
+    for i in Tareas_ordenadas:
+        if i == 1 or 2 or 3:
+            Tareas_ordenadas.remove(i)
     return Tareas_ordenadas
 print(ordenar(Tareas_Domesticas))            
 
