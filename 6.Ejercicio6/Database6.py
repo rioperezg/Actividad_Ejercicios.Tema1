@@ -17,5 +17,6 @@ def Separar(Lista):
         else:
             Pares.append(i)
     return ("Estos son los numeros pares: {}, y estos son los numeros impares: {}".format(Pares, Impares))
-print(Separar([23,42,56,18,35,76,81]))    
+print(Separar([23,42,56,18,35,76,81]))
+    
     

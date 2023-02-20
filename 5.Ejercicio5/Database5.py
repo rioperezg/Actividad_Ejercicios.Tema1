@@ -17,7 +17,7 @@ def Descomposicion(num):
     numero = list(numero)
     numero = numero[::-1]
     n = len(numero) - 1
-    for i, letra in numero:
+    for i, letra in enumerate(numero):
         return "{}{}{}".format((n - i)*"0", letra, i*"0"
         )
 print(Descomposicion(3647))
