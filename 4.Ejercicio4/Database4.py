@@ -15,9 +15,9 @@ Tareas_Domesticas = ["2Recoger los platos", "1Hacer la cama", "3Hacer la comida"
 
 def ordenar(Tareas):
     Tareas_ordenadas = Tareas.sort()
-    for tarea in enumerate(Tareas_ordenadas):
-        tarea = list(tarea)
-        return tarea          
+    # for tarea in Tareas_ordenadas:
+        # tarea = list(tarea)
+    return Tareas_ordenadas         
 print(ordenar(Tareas_Domesticas))         
 
 
