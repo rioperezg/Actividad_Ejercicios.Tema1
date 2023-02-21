@@ -8,3 +8,11 @@ Sugerencia
 Puedes utilizar la sintaxis "elemento in lista"
 elementos = [1, 5, -2]
 """
+def agregar_una_vez(lista, el):
+    if el not in lista:
+        lista.append(el)
+        print(lista)
+    else:
+        ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
+lista1 = [1, 2, 5, 6, 23, 2]  
+print(agregar_una_vez(lista1, 1)) 
