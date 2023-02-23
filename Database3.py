@@ -7,19 +7,19 @@ lista_1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
 lista_2 = ["h",'o','l','a',' ', 'l','u','n','a']
 
 """
-lista_1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
+lista1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
 
-lista_2 = ["h",'o','l','a',' ', 'l','u','n','a']
+lista2 = ["h",'o','l','a',' ', 'l','u','n','a']
 def lista_final(lista_1,lista_2):
-    lista_final = []
+    Lista_final = []
     for i in lista_1:
         for j in lista_2:
             if i == j:
-                lista_final.append(i)
-    print("En primera instancia la lista final es: ",lista_final)
-    lista_final2 = []
-    for lista_final in lista_final:
-        if lista_final not in lista_final2:
-            lista_final2.append(lista_final)
-    return lista_final2      
-print(lista_final(lista_1,lista_2))
+                Lista_final.append(i)
+    print("En primera instancia la lista final es: ",Lista_final)
+    Lista_final2 = []
+    for Lista_final in Lista_final:
+        if Lista_final not in Lista_final2:
+            Lista_final2.append(Lista_final)
+    return Lista_final2      
+print(lista_final(lista1,lista2))
