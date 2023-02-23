@@ -9,10 +9,20 @@ Puedes utilizar la sintaxis "elemento in lista"
 elementos = [1, 5, -2]
 """
 def agregar_una_vez(lista, el):
-    if el not in lista:
-        lista.append(el)
+    if el == list:
+        for el in el:
+            if el not in lista:
+                lista.append(el)
+            else:
+                pass
+                ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
+            break 
+        print(lista)               
+    else:            
+        if el not in lista:
+            lista.append(el)
+        else:
+            ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
         print(lista)
-    else:
-        ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
 lista1 = [1, 2, 5, 6, 23, 2]  
-print(agregar_una_vez(lista1, 1)) 
+print(agregar_una_vez(lista1, [3, 6, "hola"])) 

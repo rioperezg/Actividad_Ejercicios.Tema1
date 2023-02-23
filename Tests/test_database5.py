@@ -4,7 +4,7 @@ import copy
 # import helpers
 import unittest
 import Database5 as db
-class TestDatabase3(unittest.TestCase):
+class TestDatabase5(unittest.TestCase):
     def setUp5(self):
         db.Descomposicion = [000008,
                              000070,
