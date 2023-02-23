@@ -5,7 +5,7 @@ import copy
 import unittest
 import Database3 as db
 class TestDatabase3(unittest.TestCase):
-    def setUp1(self):
+    def setUp3(self):
         db.lista_final = ['h', 'o', 'l', 'a', ' ', 'u', 'n']
     def test_lista_final(self):
         listas_modificadas = db.lista_final(['h', 'o', 'l', 'a', ' ', 'u', 'n'])
