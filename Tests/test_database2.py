@@ -4,3 +4,5 @@ import copy
 # import helpers
 import unittest
 import Database2 as db
+class TestDatabase2(unittest.TestCase):
+    

@@ -5,8 +5,8 @@ import copy
 import unittest
 import Database1 as db
 
-class TestDatabase(unittest.TestCase):
-    def setUp(self):
+class TestDatabase1(unittest.TestCase):
+    def setUp1(self):
         db.nombre_y_apellidos.__init__ = "zereP nauJ, 01"
     def test_cadena(self):
         cadena_modificada = db.nombre_y_apellidos.Cadena("Juan Perez ha sacado un 10")
