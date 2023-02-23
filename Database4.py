@@ -14,16 +14,22 @@ Tareas_domesticas = ["2Hacer la comida", "3limpiar la casa", "1hacer la cama"]
 Tareas_domesticas.sort()
 print(Tareas_domesticas)
 def ordenar(Tareas):
+    Tareas_ordenadas = [] 
     Tareas.sort()
     for indice, i in enumerate(Tareas):
         i = list(i)
-        print("Tarea",[indice + 1],":{}".format(i))
-        for j in indice:
-            if j in i:
-                i.remove(j)
-                print("Tarea",[indice + 1],":{}".format(i))
+        # print("Tarea",[indice + 1],":{}".format(i))
+        for j in i:
+            if j == indice:
+                i.append(j)
             else:
-                break 
+                i.remove(j)
+                print("Tarea",[indice + 1],i)          
+                break
+        i = str(i)
+        Tareas_ordenadas.append(i)
+    return Tareas_ordenadas
+    
         
               
 print(ordenar(Tareas_domesticas))   
