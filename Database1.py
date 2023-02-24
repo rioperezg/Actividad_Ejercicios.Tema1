@@ -24,5 +24,5 @@ class nombre_y_apellidos:
         nota = Frase2[0]
         Nombre_y_apellidos  = Frase2[1]
         return "{} ha sacado un {}".format(Nombre_y_apellidos, nota)
-cadena1 = nombre_y_apellidos("zereP nauJ, 01")
-print(cadena1.Cadena(self=cadena1))
+# cadena1 = nombre_y_apellidos("zereP nauJ, 01")
+# print(cadena1.Cadena(self=cadena1))
