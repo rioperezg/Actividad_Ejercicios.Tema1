@@ -5,7 +5,12 @@ import copy
 import unittest
 import Database7 as db
 class TestDatabase5(unittest.TestCase):
-    def setUp6(self):
-        db.agregar_una_vez = 
-                        pass
-                print("Elemento:{}, in lista".format(el))
+    def setUp7(self):
+        db.agregar_una_vez = ("Elemento:", 6, "in lista" 
+        [1, 2, 5, 6, 23, 2, 3, 'hola'], "Añadido varios elementos")
+    def test_setUp7(self):
+        lista_actualizada = ("Elemento:", 6, "in lista" 
+        [1, 2, 5, 6, 23, 2, 3, 'hola'], "Añadido varios elementos")
+        lista_no_actualizada = [1, 2, 5, 6, 23, 2]
+        self.assertEqual(lista_actualizada)
+        self.assertNotEqual(lista_no_actualizada)
