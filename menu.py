@@ -2,8 +2,8 @@ import Database1 as db1
 import Database2 as db2
 import Database3 as db3
 # import Database4 as db4
-# import Database5 as db5
-# import Database6 as db6
+import Database5 as db5
+import Database6 as db6
 # import Database7 as db7
 def iniciar():
     opcion = int(input("Introduzca el numero del ejercicio que desea ejecutar:"))
@@ -25,9 +25,11 @@ def iniciar():
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
         number = input("Introduzca el numero a descomponer:")
-        
+        print(db5.Descomposicion(number))
     elif opcion == 6:
         print("Ha seleccionado el ejercicio 6")
+        lista_de_numeros = input("Introduzca los numeros que desea dividir:")
+        print(db6.Separar(lista_de_numeros))
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
     else:
