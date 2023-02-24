@@ -1,5 +1,5 @@
 import Database1 as db1
-# import Database2 as db2
+import Database2 as db2
 # import Database3 as db3
 # import Database4 as db4
 # import Database5 as db5
@@ -13,6 +13,8 @@ def iniciar():
         print(db1.nombre_y_apellidos.Cadena(self=P))
     elif opcion == 2:
         print("Ha seleccionado el ejercicio 2")
+        Q = db2.numero_final(input("Introduzca un numero entre el 1 y el 9:"))
+        print(db2.numero_final.operacion(self=Q))
     elif opcion == 3:
         print("Ha seleccionado el ejercicio 3")
     elif opcion == 4:
