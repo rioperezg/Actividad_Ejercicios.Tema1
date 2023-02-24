@@ -3,10 +3,10 @@ import copy
 # import config
 # import helpers
 import unittest
-import Database7 as db
-class TestDatabase5(unittest.TestCase):
+import Database7 as db7
+class TestDatabase7(unittest.TestCase):
     def setUp7(self):
-        db.agregar_una_vez = ("Elemento:", 6, "in lista" 
+        db7.agregar_una_vez = ("Elemento:", 6, "in lista" 
         [1, 2, 5, 6, 23, 2, 3, 'hola'], "Añadido varios elementos")
     def test_setUp7(self):
         lista_actualizada = ("Elemento:", 6, "in lista" 
