@@ -24,6 +24,8 @@ def iniciar():
         print("Ha seleccionado el ejercicio 4")
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
+        number = input("Introduzca el numero a descomponer:")
+        
     elif opcion == 6:
         print("Ha seleccionado el ejercicio 6")
     elif opcion == 7:
