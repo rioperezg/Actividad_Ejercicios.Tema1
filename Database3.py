@@ -22,4 +22,4 @@ def lista_final(lista_1,lista_2):
         if Lista_final not in Lista_final2:
             Lista_final2.append(Lista_final)
     return Lista_final2      
-print(lista_final(lista1,lista2))
+# print(lista_final(lista1,lista2))
