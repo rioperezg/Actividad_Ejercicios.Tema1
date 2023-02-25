@@ -26,13 +26,13 @@ def ordenar(Tareas):
                 i.remove(j)
                 print("Tarea",[indice + 1],i)          
                 break
-        i = str(i)
+        i = "".join(i)
         Tareas_ordenadas.append(i)
     return Tareas_ordenadas
     
         
               
-print(ordenar(Tareas_domesticas))   
+# print(ordenar(Tareas_domesticas))   
 
 """"
 PRUEBA:
