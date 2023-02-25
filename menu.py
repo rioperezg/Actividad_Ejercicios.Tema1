@@ -28,8 +28,8 @@ def iniciar():
         print(db5.Descomposicion(number))
     elif opcion == 6:
         print("Ha seleccionado el ejercicio 6")
-        lista_de_numeros = input("Introduzca los numeros que desea dividir:")
-        print(db6.Separar(lista_de_numeros))
+        Lista = input("Introduzca la lista de numeros:")
+        print(db6.Separar(Lista))
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
 
