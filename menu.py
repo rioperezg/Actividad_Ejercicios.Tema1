@@ -22,7 +22,7 @@ def iniciar():
         print(db3.lista_final(lista_1,lista_2)) 
     elif opcion == 4:
         print("Ha seleccionado el ejercicio 4")
-        Tareas = input("Introduzca las tareas a realizar:")
+        Tareas = list(input("Introduzca las tareas a realizar:"))
         print(db4.ordenar(Tareas))
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
