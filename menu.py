@@ -1,7 +1,7 @@
 import Database1 as db1
 import Database2 as db2
 import Database3 as db3
-# import Database4 as db4
+import Database4 as db4
 import Database5 as db5
 import Database6 as db6
 # import Database7 as db7
@@ -22,6 +22,8 @@ def iniciar():
         print(db3.lista_final(lista_1,lista_2)) 
     elif opcion == 4:
         print("Ha seleccionado el ejercicio 4")
+        Tareas = input("Introduzca las tareas a realizar:")
+        print(db4.ordenar(Tareas))
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
         number = input("Introduzca el numero a descomponer:")
