@@ -4,7 +4,7 @@ import Database3 as db3
 import Database4 as db4
 import Database5 as db5
 import Database6 as db6
-# import Database7 as db7
+import Database7 as db7
 def iniciar():
     opcion = int(input("Introduzca el numero del ejercicio que desea ejecutar:"))
     if opcion == 1:
@@ -34,6 +34,9 @@ def iniciar():
         print(db6.Separar(Lista))
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
+        lista = input("Introduzca la lista predefinida:")
+        el = input("Introduzca el, o los elementos a añadir:")
+        print(db7.agregar_una_vez(lista, el))
 
     else:
         print("Solo se encuentran 7 ejercicios disponibles")                   
