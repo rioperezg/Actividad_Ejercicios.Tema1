@@ -7,7 +7,8 @@ def leerLista_nums(strr):
     lista_nums =[]
     strr = strr.split(",")
     for i in strr:
-        i = int(i)
-        lista_nums.append(i)
+        if i == 2 or 3:
+           i = int(i)
+           lista_nums.append(i)
     return lista_nums
-# print(leerLista_nums("2,3"))    
+print(leerLista_nums("2,3"))    
