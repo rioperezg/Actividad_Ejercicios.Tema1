@@ -39,6 +39,7 @@ def iniciar():
         print(db7.agregar_una_vez(lista, el))
 
     else:
-        print("Solo se encuentran 7 ejercicios disponibles")                   
+        print("Solo se encuentran 7 ejercicios disponibles")
+    pass                   
 
 print(iniciar())
