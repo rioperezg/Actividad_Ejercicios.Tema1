@@ -30,13 +30,12 @@ def iniciar():
         print(db5.Descomposicion(number))
     elif opcion == 6:
         print("Ha seleccionado el ejercicio 6")
-        print(db6.Separar(Lista = Formateo.leerLista_pantalla(stri=input("Introduzca la lista de numeros:"))))
-        # Problema
+        print(db6.Separar(Lista = Formateo.leerLista_nums(strr=input("Introduzca la lista de numeros:"))))
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
         lista = input("Introduzca la lista predefinida:")
         el = input("Introduzca el, o los elementos a añadir:")
-        print(db7.agregar_una_vez(lista, el))
+        print(db7.agregar_una_vez(lista = Formateo.leerLista_nums(strr=input("Introduzca la lista de numeros:")), el))
         # Problema
 
     else:
