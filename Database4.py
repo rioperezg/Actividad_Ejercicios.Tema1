@@ -30,6 +30,7 @@ def ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Ta
         i = "".join(i)
         Tareas_ordenadas.append(i)
     return Tareas_ordenadas
+print(ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))))
     
         
               
