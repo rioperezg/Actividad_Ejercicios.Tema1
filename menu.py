@@ -22,8 +22,8 @@ def iniciar():
         print(db3.lista_final(lista_1,lista_2)) 
     elif opcion == 4:
         print("Ha seleccionado el ejercicio 4")
-        Tareas = (input("Introduzca las tareas a realizar:"))
         print(db4.ordenar(Tareas))
+        # Problema
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
         number = input("Introduzca el numero a descomponer:")
@@ -32,11 +32,13 @@ def iniciar():
         print("Ha seleccionado el ejercicio 6")
         Lista = (input("Introduzca la lista de numeros:"))
         print(db6.Separar(Lista))
+        # Problema
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
         lista = input("Introduzca la lista predefinida:")
         el = input("Introduzca el, o los elementos a añadir:")
         print(db7.agregar_una_vez(lista, el))
+        # Problema
 
     else:
         print("Solo se encuentran 7 ejercicios disponibles")
