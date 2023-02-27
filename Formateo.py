@@ -10,4 +10,4 @@ def leerLista_nums(strr):
            i = int(i)
            lista_nums.append(i)
     return lista_nums
-# print(leerLista_nums("2,3,hola"))    
+# print(leerLista_nums("2,3,6"))    

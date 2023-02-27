@@ -33,8 +33,7 @@ def iniciar():
         print(db6.Separar(Lista = Formateo.leerLista_nums(strr=input("Introduzca la lista de numeros:"))))
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
-        print(db7.agregar_una_vez(lista = Formateo.leerLista_nums(strr=input("Introduzca la lista de num:")), el = Formateo.leerLista_nums(strr="Introduzca la lista de num:")))
-        # Problema
+
 
     else:
         print("Solo se encuentran 7 ejercicios disponibles")
