@@ -30,7 +30,7 @@ class numero_final:
         numero_magico = nuevo_num * numero_magic
         return "Finalmente, el numero que resulta de multiplicar {} y {} es: {}".format(numero_magic,nuevo_num, numero_magico)
 
-# P = numero_final(input("Introduzca un numero entre el 1 y el 9:"))
-# print(P.operacion())
+P = numero_final(input("Introduzca un numero entre el 1 y el 9:"))
+print(P.operacion())
 
 
