@@ -5,6 +5,7 @@ import Database4 as db4
 import Database5 as db5
 import Database6 as db6
 import Database7 as db7
+import Formateo
 def iniciar():
     opcion = int(input("Introduzca el numero del ejercicio que desea ejecutar:"))
     if opcion == 1:
@@ -23,15 +24,13 @@ def iniciar():
     elif opcion == 4:
         print("Ha seleccionado el ejercicio 4")
         print(db4.ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))))
-        # Problema
     elif opcion == 5:
         print("Ha seleccionado el ejercicio 5")
         number = input("Introduzca el numero a descomponer:")
         print(db5.Descomposicion(number))
     elif opcion == 6:
         print("Ha seleccionado el ejercicio 6")
-        Lista = (input("Introduzca la lista de numeros:"))
-        print(db6.Separar(Lista))
+        print(db6.Separar(Lista = Formateo.leerLista_pantalla(stri=input("Introduzca la lista de numeros:"))))
         # Problema
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
