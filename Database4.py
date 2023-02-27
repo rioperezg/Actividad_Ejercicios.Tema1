@@ -13,7 +13,8 @@ Para ordenar automáticamente una lista es posible utilizar el método .sort(), 
 Tareas_domesticas = ["2Hacer la comida", "3limpiar la casa", "1hacer la cama"]
 # Tareas_domesticas.sort()
 # print(Tareas_domesticas)
-def ordenar(Tareas):
+import Formateo
+def ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))):
     Tareas_ordenadas = [] 
     Tareas.sort()
     for indice, i in enumerate(Tareas):
