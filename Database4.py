@@ -14,7 +14,7 @@ Tareas_domesticas = ["2Hacer la comida", "3limpiar la casa", "1hacer la cama"]
 # Tareas_domesticas.sort()
 # print(Tareas_domesticas)
 import Formateo
-def ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))):
+def ordenar(Tareas):
     Tareas_ordenadas = [] 
     Tareas.sort()
     for indice, i in enumerate(Tareas):
@@ -30,7 +30,7 @@ def ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Ta
         i = "".join(i)
         Tareas_ordenadas.append(i)
     return Tareas_ordenadas
-print(ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))))
+# print(ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))))
     
         
               
