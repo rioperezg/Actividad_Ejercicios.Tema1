@@ -1,10 +1,10 @@
-import Database1 as db1
-import Database2 as db2
-import Database3 as db3
-import Database4 as db4
-import Database5 as db5
-import Database6 as db6
-import Database7 as db7
+import Ejercicio_1 as db1
+import Ejercicio_2 as db2
+import Ejercicio_3 as db3
+import Ejercicio_4 as db4
+import Descomposicion as db5
+import Ejercicio_6 as db6
+import Ejercicio_7 as db7
 import Formateo
 def iniciar():
     opcion = int(input("Introduzca el numero del ejercicio que desea ejecutar:"))

@@ -3,7 +3,7 @@ import copy
 # import config
 # import helpers
 import unittest
-import Database7 as db7
+import Ejercicio_7 as db7
 class TestDatabase7(unittest.TestCase):
     def setUp7(self):
         db7.agregar_una_vez = ("Elemento:", 6, "in lista" 

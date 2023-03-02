@@ -3,7 +3,7 @@ import copy
 # import config
 # import helpers
 import unittest
-import Database6 as db6
+import Ejercicio_6 as db6
 class TestDatabase6(unittest.TestCase):
     def setUp6(self):
         db6.Separar = "Estos son los numeros pares:" [42, 56, 18, 76], "y estos son los numeros impares:" [23, 35, 81]

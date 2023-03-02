@@ -3,7 +3,7 @@ import copy
 # import config
 # import helpers
 import unittest
-import Database3 as db3
+import Ejercicio_3 as db3
 class TestDatabase3(unittest.TestCase):
     def setUp3(self):
         db3.lista_final = ['h', 'o', 'l', 'a', ' ', 'u', 'n']

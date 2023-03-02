@@ -3,7 +3,7 @@ import copy
 # import config
 # import helpers
 import unittest
-import Database2 as db2
+import Ejercicio_2 as db2
 class TestDatabase2(unittest.TestCase):
     def setUp2(self):
         db2.numero_final.__init__= 4
