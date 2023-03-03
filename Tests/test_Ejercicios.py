@@ -9,16 +9,16 @@ import Ejercicio_7 as E7
 
 class TestDatabase1(unittest.TestCase):
     def test_cadena(self):
-        cadena_modificar = E1.Cadena("zereP nauJ, 01")
+        cadena_modificar = E1.Cadena("zereP nauJ,01")
         self.assertEqual(cadena_modificar, "Juan Perez ha sacado un 10")
 
-"""
+
     def test_operacion(self):
-        numero_obtenido = E2.numero_final.operacion(444444444)
+        numero_aobtener = E2.numero_final.operacion(444444444)
         numero_noObtenido = E2.numero_final.operacion(4)
         self.assertEqual(numero_obtenido)
         self.assertNotEqual(numero_noObtenido)
-
+"""
     def test_lista_final(self):
         listas_modificadas = E3.lista_final(['h', 'o', 'l', 'a', ' ', 'u', 'n'])
         listas_no_modificadas = E3.lista_final(["h",'o','l','a',' ', 'm','u','n','d','o'], ["h",'o','l','a',' ', 'l','u','n','a'])
