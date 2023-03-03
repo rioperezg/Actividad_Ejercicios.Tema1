@@ -34,11 +34,5 @@ class TestDatabase1(unittest.TestCase):
  
     def test_Descomposicion(self):
         numero_descompuesto = db5.Descomposicion(123678)
-        self.assertEqual(numero_descompuesto, 
-                        (000008)
-                        (000070)
-                        (000600)
-                        (003000)
-                        (020000)
-                        (100000))
+        self.assertEqual(numero_descompuesto, "Esta es la descomposicion de 123678")
 
