@@ -23,4 +23,4 @@ def agregar_una_vez(lista, el):
             ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
         print(lista, "Añadido solo un elemento")
 lista1 = [1, 2, 5, 6, 23, 2]  
-# print(agregar_una_vez(lista1, [2, 6, "hola", 40])) 
+print(agregar_una_vez(lista1, [3, 6, "hola"])) 
