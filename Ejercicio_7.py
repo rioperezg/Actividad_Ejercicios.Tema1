@@ -15,12 +15,12 @@ def agregar_una_vez(lista, el):
                 lista.append(i)
             else:
                 print("Elemento:{}, in lista".format(i))
-        print(lista, "Añadido varios elementos")               
+        return(lista, "Añadido varios elementos")               
     else:            
         if el not in lista:
             lista.append(el)
         else:
             ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
-        print(lista, "Añadido solo un elemento")
-lista1 = [1, 2, 5, 6, 23, 2]  
-print(agregar_una_vez(lista1, [3, 6, "hola"])) 
+        return(lista, "Añadido solo un elemento")
+# lista1 = [1, 2, 5, 6, 23, 2]  
+# print(agregar_una_vez([1, 2, 5, 6, 23, 2], [3, 6, "hola"])) 

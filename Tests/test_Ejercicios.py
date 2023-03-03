@@ -29,9 +29,8 @@ class TestDatabase1(unittest.TestCase):
         self.assertEqual(Lista_separada, "Estos son los numeros pares: [42, 56, 18, 76], y estos son los numeros impares: [23, 35, 81]")       
  
     def test_agregar(self):
-        lista_actualizada = E7.agregar_una_vez([1, 2, 5, 6, 23, 2], [3, 6, "hola"])
-        self.assertEqual(lista_actualizada, "Elemento:6, in lista"
-"[1, 2, 5, 6, 23, 2, 3, 'hola'] Añadido varios elementos")  
+        lista_actualizada = E7.agregar_una_vez([1, 2, 5, 6, 23, 2], [3, 6,"hola"])
+        self.assertEqual(lista_actualizada, "Elemento:6, in lista[1, 2, 5, 6, 23, 2, 3,'hola'] Añadido varios elementos")  
 """" 
     def test_Descomposicion(self):
         numero_descompuesto = db5.Descomposicion(123678)
