@@ -16,19 +16,17 @@ class TestDatabase1(unittest.TestCase):
     def test_operacion(self):
         numero_aobtener = E2.operacion(4)
         self.assertEqual(numero_aobtener, "Finalmente, el numero que resulta de multiplicar 12345679 y 36 es: 444444444")
-"""
+
     def test_lista_final(self):
-        listas_modificadas = E3.lista_final(['h', 'o', 'l', 'a', ' ', 'u', 'n'])
-        listas_no_modificadas = E3.lista_final(["h",'o','l','a',' ', 'm','u','n','d','o'], ["h",'o','l','a',' ', 'l','u','n','a'])
-        self.assertEqual(listas_modificadas)
-        self.assertNotEqual(listas_no_modificadas)
+        listas_modificadas = E3.lista_final(["h",'o','l','a',' ', 'm','u','n','d','o'], ["h",'o','l','a',' ', 'l','u','n','a'])
+        self.assertEqual(listas_modificadas, ['h', 'o', 'l', 'a', ' ', 'u', 'n'])
 
     def test_ordenar(self):
         Tareas_ordenadas = E4.ordenar(["Hacer la cama", "Hacer la comida", "Limpiar la casa"])
         Tareas_NoOrdenadas = E4.ordenar(["2Hacer la comida", "3limpiar la casa", "1hacer la cama"])
         self.assertEqual(Tareas_ordenadas)
         self.assertNotEqual(Tareas_NoOrdenadas)
-        
+""""        
     def test_Descomposicion(self):
         numero_descompuesto = db5.Descomposicion(("000008")
                              ("000070")
