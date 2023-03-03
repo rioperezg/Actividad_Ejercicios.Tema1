@@ -31,14 +31,14 @@ class TestDatabase1(unittest.TestCase):
     def test_agregar(self):
         lista_actualizada = E7.agregar_una_vez([1, 2, 5, 6, 23, 2], [3, 6,"hola"])
         self.assertEqual(lista_actualizada, ([1, 2, 5, 6, 23, 2, 3,'hola'], "Añadido varios elementos"))  
-"""" 
+ 
     def test_Descomposicion(self):
         numero_descompuesto = db5.Descomposicion(123678)
         self.assertEqual(numero_descompuesto, 
-                        000008
-                        000070
-                        000600
-                        003000
-                        020000
-                        100000)
-"""
+                        (000008)
+                        (000070)
+                        (000600)
+                        (003000)
+                        (020000)
+                        (100000))
+
