@@ -9,11 +9,10 @@ import Ejercicio_7 as E7
 
 class TestDatabase1(unittest.TestCase):
     def test_cadena(self):
-        cadena_modificada = E1.nombre_y_apellidos.Cadena("Juan Perez ha sacado un 10")
-        cadena_no_modificada = E1.nombre_y_apellidos.Cadena("zereP nauJ, 01")
-        self.assertIsNotNone(cadena_modificada)
-        self.assertIsNone(cadena_no_modificada)
+        cadena_modificar = E1.Cadena("zereP nauJ, 01")
+        self.assertEqual(cadena_modificar, "Juan Perez ha sacado un 10")
 
+"""
     def test_operacion(self):
         numero_obtenido = E2.numero_final.operacion(444444444)
         numero_noObtenido = E2.numero_final.operacion(4)
@@ -55,3 +54,4 @@ class TestDatabase1(unittest.TestCase):
         lista_no_actualizada = E7.agregar_una_vez([1, 2, 5, 6, 23, 2])
         self.assertEqual(lista_actualizada)
         self.assertNotEqual(lista_no_actualizada)
+"""

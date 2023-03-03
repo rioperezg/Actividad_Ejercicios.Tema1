@@ -11,18 +11,12 @@ Para voltear una cadena rápidamente utilizando slicing podemos utilizar un terc
 
 cadena = "zeréP nauJ,01"
 """
-#Creamos una clase para recibir dicha cadena corrupta y poder transformalo en una cadena legible.
-class nombre_y_apellidos:
-    #A continucaion creamos el constructor de la clase, que se va a componer unicamente de cadena, ya que es solo la cadena corrupta
-    #lo que necesitamos
-    def __init__(self, cadena):
-        self.cadena = cadena 
-    @staticmethod      
-    def Cadena(self):
-        Frase = self.cadena[::-1]
-        Frase2 = Frase.split(",")
-        nota = Frase2[0]
-        Nombre_y_apellidos  = Frase2[1]
-        return "{} ha sacado un {}".format(Nombre_y_apellidos, nota)
+   
+def Cadena(cadena):
+    Frase = cadena[::-1]
+    Frase2 = Frase.split(",")
+    nota = Frase2[0]
+    Nombre_y_apellidos  = Frase2[1]
+    return "{} ha sacado un {}".format(Nombre_y_apellidos, nota)
 # cadena1 = nombre_y_apellidos("zereP nauJ, 01")
 # print(cadena1.Cadena(self=cadena1))
