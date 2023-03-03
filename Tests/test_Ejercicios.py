@@ -12,7 +12,6 @@ class TestDatabase1(unittest.TestCase):
         cadena_modificar = E1.Cadena("zereP nauJ,01")
         self.assertEqual(cadena_modificar, "Juan Perez ha sacado un 10")
 
-
     def test_operacion(self):
         numero_aobtener = E2.operacion(4)
         self.assertEqual(numero_aobtener, "Finalmente, el numero que resulta de multiplicar 12345679 y 36 es: 444444444")
@@ -22,11 +21,9 @@ class TestDatabase1(unittest.TestCase):
         self.assertEqual(listas_modificadas, ['h', 'o', 'l', 'a', ' ', 'u', 'n'])
 
     def test_ordenar(self):
-        Tareas_ordenadas = E4.ordenar(["Hacer la cama", "Hacer la comida", "Limpiar la casa"])
-        Tareas_NoOrdenadas = E4.ordenar(["2Hacer la comida", "3limpiar la casa", "1hacer la cama"])
-        self.assertEqual(Tareas_ordenadas)
-        self.assertNotEqual(Tareas_NoOrdenadas)
-""""        
+        Tareas_ordenadas = E4.ordenar(["2Hacer la comida", "3Limpiar la casa", "1Hacer la cama"])
+        self.assertEqual(Tareas_ordenadas, ["Hacer la cama", "Hacer la comida", "Limpiar la casa"])
+       
     def test_Descomposicion(self):
         numero_descompuesto = db5.Descomposicion(("000008")
                              ("000070")
@@ -37,7 +34,7 @@ class TestDatabase1(unittest.TestCase):
         numero_sin_descomponer = db5.Descomposicion(123678)
         self.assertEqual(numero_descompuesto)
         self.assertNotEqual(numero_sin_descomponer) 
-        
+""""        
     def test_Separar(self): 
         Lista_separada = E6.Separar("Estos son los numeros pares:" [42, 56, 18, 76], "y estos son los numeros impares:" [23, 35, 81])
         Lista_no_separada = E6.Separar([23,42,56,18,35,76,81])

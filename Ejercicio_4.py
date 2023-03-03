@@ -24,7 +24,7 @@ def ordenar(Tareas):
                 i.append(j)
             else:
                 i.remove(j)
-                print("Tarea",[indice + 1],i)          
+                # print("Tarea",[indice + 1],i)          
                 break
         i = "".join(i)
         Tareas_ordenadas.append(i)
