@@ -14,10 +14,8 @@ class TestDatabase1(unittest.TestCase):
 
 
     def test_operacion(self):
-        numero_aobtener = E2.numero_final.operacion(444444444)
-        numero_noObtenido = E2.numero_final.operacion(4)
-        self.assertEqual(numero_obtenido)
-        self.assertNotEqual(numero_noObtenido)
+        numero_aobtener = E2.operacion(4)
+        self.assertEqual(numero_aobtener, "Finalmente, el numero que resulta de multiplicar 12345679 y 36 es: 444444444")
 """
     def test_lista_final(self):
         listas_modificadas = E3.lista_final(['h', 'o', 'l', 'a', ' ', 'u', 'n'])

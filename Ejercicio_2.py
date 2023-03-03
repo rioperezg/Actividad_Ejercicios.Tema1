@@ -10,27 +10,25 @@ Finalmente muestra el valor final del numero_magico por pantalla
 #necesitamos proporcionar un programa que dado un numero entre el 1 y el 9 haga dichas operaciones ademas forzaremos a que el programa
 #obligue introducir dicho numero con esos parametros
 #Empecemos por el numero_usuario
-class numero_final:
-    def __init__(self, numero_usuario):
-        self.numero_usuario = numero_usuario
-        while True:
-            try:
-                self.numero_usuario = int(self.numero_usuario)
-            except:
-                print("El numero no es valido")
-            if 0 < self.numero_usuario < 10:
-                break
-            else:
-                print("El numero se encuentra fuera del rango")
-                pass
-    def operacion(self):
-        numero_magic = 12345679
-        nuevo_num = self.numero_usuario*9
-        print("El numero usuario :{}, multiplicado por 9 es: {}".format(self.numero_usuario, nuevo_num))
-        numero_magico = nuevo_num * numero_magic
-        return "Finalmente, el numero que resulta de multiplicar {} y {} es: {}".format(numero_magic,nuevo_num, numero_magico)
+def operacion(numero_usuario):
+    while True:
+        try:
+            numero_usuario = int(numero_usuario)
+        except:
+            print("El numero no es valido")
+        if 0 < numero_usuario < 10:
+            break
+        else:
+            print("El numero se encuentra fuera del rango")
+            pass
 
-# P = numero_final(input("Introduzca un numero entre el 1 y el 9:"))
-# print(P.operacion())
+    numero_magic = 12345679
+    nuevo_num = numero_usuario*9
+    print("El numero usuario :{}, multiplicado por 9 es: {}".format(numero_usuario, nuevo_num))
+    numero_magico = nuevo_num * numero_magic
+    return "Finalmente, el numero que resulta de multiplicar {} y {} es: {}".format(numero_magic,nuevo_num, numero_magico)
+
+
+print(operacion(4))
 
 
