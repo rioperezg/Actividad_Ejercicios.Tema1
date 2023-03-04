@@ -27,7 +27,7 @@ def leerLista_nums2(strr):
                break
         sys.exit   
     return lista_nums
-print(leerLista_nums2("2,3,6,hola"))
+# print(leerLista_nums2("2,3,6,hola"))
 """
 import sys
 def num():

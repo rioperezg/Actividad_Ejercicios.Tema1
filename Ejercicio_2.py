@@ -29,6 +29,6 @@ def operacion(numero_usuario):
     return "Finalmente, el numero que resulta de multiplicar {} y {} es: {}".format(numero_magic,nuevo_num, numero_magico)
 
 
-print(operacion(4))
+# print(operacion(4))
 
 
