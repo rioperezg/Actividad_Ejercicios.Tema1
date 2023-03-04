@@ -11,20 +11,23 @@ def leerLista_nums(strr):
         i = int(i)
         lista_nums.append(i)
     return lista_nums
-print(leerLista_nums("2,3,6"))    
+# print(leerLista_nums("2,3,6"))    
 
-def leerLista_nums(strr):
+def leerLista_nums2(strr):
     lista_nums =[]
     strr = strr.split(",")
     for i in strr:
-        try:
-           i = int(i)
-        except:       
-           lista_nums.append(i), file = sys.stderr
-        else:
-            break
+        while True:
+            lista_nums.append(i)
+            try:
+               i = int(i)
+            except:       
+               file = sys.stderr
+            else:
+               break
         sys.exit   
     return lista_nums
+print(leerLista_nums2("2,3,6,hola"))
 """
 import sys
 def num():
