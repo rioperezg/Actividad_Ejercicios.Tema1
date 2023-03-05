@@ -36,6 +36,7 @@ def iniciar():
         print(E7.agregar_una_vez(lista=Formateo.leerLista_pantalla(strr = input("Introduzca la lista:")), el=Formateo.leerLista_pantalla(strr = input("Introduzca los elementos a añadir:"))))
     else:
         print("Solo se encuentran 7 ejercicios disponibles")
-    pass                   
+    pass
+                       
 
 print(iniciar())
