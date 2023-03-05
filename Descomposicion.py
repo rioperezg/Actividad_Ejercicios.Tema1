@@ -20,4 +20,4 @@ def Descomposicion(num):
     for i, letra in enumerate(numero):
         print("{}{}{}".format((n - i)*"0", letra, i*"0")) 
     return "Esta es la descomposicion de {}".format(num)
-print(Descomposicion(123678))
+# print(Descomposicion(123678))
