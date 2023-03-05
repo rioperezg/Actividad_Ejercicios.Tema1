@@ -1,55 +1,16 @@
-import sys
-def leerLista_pantalla(stri):
-    cadena = stri.split(",")
-    return cadena
-# print(leerLista_pantalla("2Hacer la comida,3limpiar la casa,1hacer la cama"))
-# print(leerLista_pantalla("2,3,4,56,76"))
-def leerLista_nums(strr):
-    lista_nums =[]
-    strr = strr.split(",")
-    for i in strr:
-        i = int(i)
-        lista_nums.append(i)
-    return lista_nums
-# print(leerLista_nums("2,3,6"))    
 
-def leerLista_nums2(strr):
+def leerLista_pantalla(strr):
     lista_nums =[]
     strr = strr.split(",")
     for i in strr:
-        while True:
-            lista_nums.append(i)
-            try:
-               i = int(i)
-            except:       
-               file = sys.stderr
-            else:
-               break
-        sys.exit   
-    return lista_nums
-print(leerLista_nums2("2,3,6,hola"))
-"""
-import sys
-def num():
-    while True:
-        numeros = input("valor: ")
-        try: 
-            numeros = int(numeros)
+        try:
+            i = int(i)
         except:
-            print("valor no aceptado", file=sys.stderr)
+            pass
+            i = str(i)   
+            lista_nums.append(i)
         else:
-            break
-        sys.exit
-    return str(numeros)
-def Descomponer():
-    numeros = num()
-    numero = numeros[::-1]
-    ceros_izquierda = 0
-    while True:
-        for i in str(numero):
-            ceros_izquierda+=1
-            print((i.ljust(int(ceros_izquierda), "0")).zfill(len(numero)), "\n")
-            #l.just: left justified
-            #.zfill:Pad a numeric string with zeros on the left, to fill a field of the given width.
-        if ceros_izquierda >= len(numero):
-"""
+            i = int(i)
+            lista_nums.append(i)    
+    return lista_nums
+# print(leerLista_pantalla("2,3,hola"))

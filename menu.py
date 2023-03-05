@@ -34,10 +34,6 @@ def iniciar():
     elif opcion == 7:
         print("Ha seleccionado el ejercicio 7")
         print(E7.agregar_una_vez(lista=Formateo.leerLista_pantalla(stri=input("Introduzca la lista:")), el=Formateo.leerLista_pantalla(stri=input("Introduzca los elementos a añadir:"))))
-    # Temporal
-    elif opcion == 8:
-        print(Formateo.leerLista_nums2(input("Introduzca la cadena a listear:")))
-
     else:
         print("Solo se encuentran 7 ejercicios disponibles")
     pass                   
