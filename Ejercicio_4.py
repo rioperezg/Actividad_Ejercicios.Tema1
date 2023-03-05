@@ -8,53 +8,27 @@ Sugerencia
 
 Para ordenar automáticamente una lista es posible utilizar el método .sort(), deberias probarlo.
 """
-#Mi idea es predefinir un diccionario con el orden ya establecido. Y con el metodo sort ordenar todas las tareas de mayor a menor 
-#importancia de acuerdo al numero que estan asignados. no, tenemos que hacerlo de forma diferente
-Tareas_domesticas = ["2Hacer la comida", "3limpiar la casa", "1hacer la cama"]
-# Tareas_domesticas.sort()
-# print(Tareas_domesticas)
+
 def ordenar(Tareas):
     Tareas_ordenadas = [] 
+    # Utilizamos el metodo sort para ordenar automaticamente la lista
     Tareas.sort()
     for indice, i in enumerate(Tareas):
         i = list(i)
-        # print("Tarea",[indice + 1],":{}".format(i))
+        # Recorremos esta lista y hacemos de cada elemento cadena de la lista, una lista en si
         for j in i:
             if j == indice:
+                # Recorremos estas sublistas y si hay algun elemento en ellas que sea = indice(1,2,3,...) lo borramos
                 i.append(j)
             else:
-                i.remove(j)
-                # print("Tarea",[indice + 1],i)          
+                i.remove(j)        
                 break
+        # Por ultimo cada sublista la juntamos y convertimos en cadena y añadimos estas cadenas a una lista vacia 
         i = "".join(i)
         Tareas_ordenadas.append(i)
     return Tareas_ordenadas
-# print(ordenar(Tareas = Formateo.leerLista_pantalla(stri = input("Introduzca las Tareas a realizar:"))))
-    
-        
-              
-# print(ordenar(Tareas_domesticas))   
 
-""""
-PRUEBA:
-Tareas_domesticas = ["2Hacer la comida", "3limpiar la casa", "1hacer la cama"]
-Tareas_domesticas.sort()
-print(Tareas_domesticas)
-def ordenar(Tareas):
-    Tareas.sort()
-    for indice, i in enumerate(Tareas):
-        i = list(i)
-        print("Tarea",[indice + 1],":{}".format(i))
-        for j in indice:
-            if j in i:
-                i.remove(j)
-                print("Tarea",[indice + 1],":{}".format(i))
-            else:
-                break 
-        
-              
-print(ordenar(Tareas_domesticas))  
-"""
+
 
 
   

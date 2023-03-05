@@ -10,17 +10,18 @@ elementos = [1, 5, -2]
 """
 def agregar_una_vez(lista, el):
     if type(el) == list:
+        # Dada la lista y el elemento, diferenciaremos si el elemento a añadir es de tipo lista o un unico elemento
         for i in el:
             if i not in lista:
+                # Si es de tipo lista recorremos esta lista principal, y si i esta en la lista no añadimos i
                 lista.append(i)
             else:
                 print("Elemento:{}, in lista".format(i))
         return(lista, "Añadido varios elementos")               
     else:            
         if el not in lista:
+            # Por el contrario si solo se añade un elemento simplemente se comprueba que no este en la lista principal
             lista.append(el)
         else:
             ValueError(print("Error: Imposible añadir elementos duplicados => [elemento]."))
         return(lista, "Añadido solo un elemento")
-# lista1 = [1, 2, 5, 6, 23, 2]  
-# print(agregar_una_vez([1, 2, 5, 6, 23, 2], [3, 6, "hola"])) 

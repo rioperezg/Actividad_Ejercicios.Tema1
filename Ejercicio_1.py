@@ -13,10 +13,12 @@ cadena = "zeréP nauJ,01"
 """
    
 def Cadena(cadena):
+    # Le damos la vuelta a la cadena para empezar
     Frase = cadena[::-1]
+    # Separamos la cadena justo por la coma 
     Frase2 = Frase.split(",")
     nota = Frase2[0]
     Nombre_y_apellidos  = Frase2[1]
+    # Devolvemos la cadena sin estar corrupta
     return "{} ha sacado un {}".format(Nombre_y_apellidos, nota)
-# cadena1 = nombre_y_apellidos("zereP nauJ, 01")
-# print(Cadena("zereP nauJ, 01"))
+

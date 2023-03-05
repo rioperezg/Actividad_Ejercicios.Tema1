@@ -11,13 +11,13 @@ El programa deberá devolver una descomposición línea a línea como la siguien
 0600
 3000
 """
-from itertools import chain, product, repeat, cycle
 def Descomposicion(num):
+    # Pasamos el num a str, de str a una lista que mas tarde le daremos la vuelta
     numero = str(num)
     numero = list(numero)
     numero = numero[::-1]
     n = len(numero) - 1
+    # Por ultimo recorremos esta lista para imprimir: tantos 0 a la izq como (n - i), letra, y tantos a la dcha como i
     for i, letra in enumerate(numero):
         print("{}{}{}".format((n - i)*"0", letra, i*"0")) 
     return "Esta es la descomposicion de {}".format(num)
-# print(Descomposicion(123678))
